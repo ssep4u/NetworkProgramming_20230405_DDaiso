@@ -13,3 +13,8 @@
 2. startapp product
    1. python manage.py startapp product
    2. 'product', in INSTALLED_APPS in settings.py
+3. product/
+   1. models
+      1. Product
+         1. name
+         2. price
