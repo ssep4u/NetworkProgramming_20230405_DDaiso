@@ -22,3 +22,6 @@
             - models -> DB를 만들기 위한 py 만들기
          4. python manage.py migrate product
             - DB를 만들기 위한 py -> DB 테이블 만들기
+   2. admin
+      1. Product
+      2. python manage.py createsuperuser
