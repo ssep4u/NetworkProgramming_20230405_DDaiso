@@ -6,3 +6,4 @@ from product.models import Product
 
 class ProductListView(ListView):
     model = Product
+    #'product_list.html', {'product_list': Product.objects.all()}
