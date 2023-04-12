@@ -28,3 +28,5 @@
       2. python manage.py createsuperuser
    3. views
       1. ProductListView
+   4. urls
+      1. product:list
