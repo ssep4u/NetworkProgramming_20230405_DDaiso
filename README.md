@@ -26,9 +26,13 @@
    2. admin
       1. Product
       2. python manage.py createsuperuser
-   3. views
-      1. ProductListView
-   4. urls
-      1. product:list
-   5. templates/product
-      1. product_list.html
+   3. R: Product List
+      1. views
+         1. ProductListView
+      2. urls
+         1. product:list
+      3. templates/product
+         1. product_list.html
+   4. R: Product Detail
+      1. views
+         1. ProductDetailView
