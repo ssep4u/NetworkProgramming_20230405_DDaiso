@@ -36,3 +36,5 @@
    4. R: Product Detail
       1. views
          1. ProductDetailView
+      2. urls
+         1. product:detail
