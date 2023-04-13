@@ -49,3 +49,9 @@
          1. ProductCreateView
       2. urls
          1. product:add
+      3. templates/product
+         1. product_create.html
+         2. product_list.html
+         ```html
+         <a href="{% url 'product:add' %}">Add Product</a>
+         ```
