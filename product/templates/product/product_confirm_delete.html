@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Product</title>
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ product }}, 이거 진짜 지울거야?
+    <input type="submit" value="찐?">
+    <input type="button" value="취소" onclick="history.back();">
+</form>
+</body>
+</html>
