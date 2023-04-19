@@ -23,7 +23,7 @@
             <td>{{ forloop.counter }}</td>
             <td><a href="{% url 'product:detail' pk=product.id %}">{{ product.name }}</a></td>
             <td>{{ product.price }}원</td>
-            <td>EDIT</td>
+            <td><a href="{% url 'product:edit' pk=product.id %}">EDIT</a></td>
             <td>REMOVE</td>
         </tr>
         {% endfor %}
