@@ -63,3 +63,5 @@
       3. templates/product
          1. product_update.html
          2. product_list.html
+      4. models
+         1. get_absolute_url(): 수정했을 때 성공하면, model의 detail로 가는 함수

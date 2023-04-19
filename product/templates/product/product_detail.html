@@ -11,6 +11,7 @@
     <li>{{ product.name }}</li>
     <li>{{ product.price }}원</li>
 </ul>
+<a href="{% url 'product:edit' pk=product.id %}">EDIT</a>
 <a href="{% url 'product:list' %}">Go to Product List</a>
 </body>
 </html>
