@@ -84,3 +84,6 @@
    3. Server Terminal
       1. python manage.py makemigrations
       2. python manage.py migrate
+6. feature/boostrap
+   1. extends 'base.html'; block title, content
+      1. add DIRS in TEMPLASTES in settings.py

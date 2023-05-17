@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Product List</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Product List{% endblock %}
+
+{% block content %}
 <!-- product_list: Product.objects.all(): DB에 있는 모든 Product 꺼내서 변수에 넣어주자 -->
 <a href="{% url 'product:add' %}">Add Product</a>
 <table>
@@ -29,5 +27,4 @@
         {% endfor %}
     </tbody>
 </table>
-</body>
-</html>
+{% endblock %}
