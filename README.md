@@ -87,3 +87,6 @@
 6. feature/boostrap
    1. extends 'base.html'; block title, content
       1. add DIRS in TEMPLASTES in settings.py
+   2. static/css/bootstrap.min.css, static/js/bootstrap.min.js
+      1. add STATIC_ROOT, STATICFILES_DIRS in settings.py
+   3. add Bootstrap class in .html
