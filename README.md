@@ -90,3 +90,4 @@
    2. static/css/bootstrap.min.css, static/js/bootstrap.min.js
       1. add STATIC_ROOT, STATICFILES_DIRS in settings.py
    3. add Bootstrap class in .html
+   4. pagination
