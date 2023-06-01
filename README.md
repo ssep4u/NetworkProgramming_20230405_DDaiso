@@ -96,3 +96,12 @@
       1. product/views
       2. product/urls
       3. DDaiso/urls
+   2. FBV detail_product
+      1. product/views
+      2. product/urls
+      3. product/templates/product/product_list.html, product_detail.html
+   3. FBV create_product
+      1. product/forms
+      2. product/views
+      3. product/urls
+      4. product/templates/product/product_list.html
