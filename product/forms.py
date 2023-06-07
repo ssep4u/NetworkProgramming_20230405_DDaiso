@@ -14,3 +14,11 @@ class ProductCreationForm(forms.ModelForm):
             price=self.cleaned_data.get('price'),  # 사용자가 입력한 내용을 clean_price()하고 깨끗해진 것 가져오자
         )
         return new_product
+
+
+class ProductChangeForm(forms.ModelForm):
+    name = forms.CharField(label='제품명', widget=forms.TextInput)
+    price = forms.IntegerField(label='가격', widget=forms.NumberInput)
+    class Meta:
+        model = Product
+        fields = ['name', 'price']  #'__all__'

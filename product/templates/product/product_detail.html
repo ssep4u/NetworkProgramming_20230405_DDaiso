@@ -9,6 +9,6 @@
     <li>{{ product.name }}</li>
     <li>{{ product.price }}원</li>
 </ul>
-<a href="{% url 'product:edit' pk=product.id %}" class="btn btn-primary">EDIT</a>
+<a href="{% url 'product:edit2' pk=product.id %}" class="btn btn-primary">EDIT</a>
 <a href="{% url 'product:list2' %}" class="btn btn-warning">Go to Product List</a>
 {% endblock %}
