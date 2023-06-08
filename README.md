@@ -134,3 +134,7 @@
    5. R: Product Detail
       1. product/templates/product/product_detail
       2. static/css/style.css
+   6. C: Add Product
+      1. product/forms
+      2. product/views
+      3. product/templates/product/product_create

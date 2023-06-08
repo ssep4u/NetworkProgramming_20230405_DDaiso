@@ -38,7 +38,7 @@ class ProductCreateView(CreateView):
 
 def create_product(request):
     if request.method == 'POST':  # 사용자가 입력하고 submit 버튼 눌렀을 때
-        form = ProductCreationForm(request.POST)
+        form = ProductCreationForm(request.POST, request.FILES) #주의! files는 request.FILES로 꼭 지정해줘야 함
         if form.is_valid():  # form을 검사하자
             form.save()  # form에 있는 정보를 저장하자
         return redirect('product:list2')  # 저장하고 product:list2로 넘어가자
