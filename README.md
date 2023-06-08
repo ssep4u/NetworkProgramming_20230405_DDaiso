@@ -127,3 +127,7 @@
       2. python manage.py makemigrations product
       3. python manage.py migrate product
    3. admin
+   4. R: Product List
+      1. product/templates/product/product_list
+      2. templates/base.html
+      3. static/css/style.css
