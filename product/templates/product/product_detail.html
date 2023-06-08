@@ -6,6 +6,13 @@
 <h1>{{ product }}</h1>
 <ul>
     <li>{{ product.id }}</li>
+    <li>
+        {% if product.image %}
+            <img src="{{ product.image.url }}" alt="{{ product.name }}" class="image-detail">
+        {% else %}
+            사진 없음
+        {% endif %}
+    </li>
     <li>{{ product.name }}</li>
     <li>{{ product.price }}원</li>
 </ul>
