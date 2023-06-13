@@ -56,13 +56,15 @@ class ProductUpdateView(UpdateView):
 
 
 def update_product(request, pk):
+    product = Product.objects.get(pk=pk)
     if request.method == 'POST':  # 사용자가 입력하고 submit 버튼 눌렀을 때
-        form = ProductChangeForm(request.POST)  # form에 있는 내용 가져오자
+        form = ProductChangeForm(request.POST, request.FILES, instance=product)  # form에 있는 내용 가져오자
         if form.is_valid():  # form 검사하자
-            seleted_product = Product.objects.get(pk=pk)  # pk로 Product에서 하나 꺼내자
-            seleted_product.name = form.cleaned_data.get('name')  # 입력한 내용으로 product 수정하자
-            seleted_product.price = form.cleaned_data.get('price')
-            seleted_product.save()  # product 저장하자
+            # seleted_product = Product.objects.get(pk=pk)  # pk로 Product에서 하나 꺼내자
+            # seleted_product.name = form.cleaned_data.get('name')  # 입력한 내용으로 product 수정하자
+            # seleted_product.price = form.cleaned_data.get('price')
+            # seleted_product.save()  # product 저장하자
+            form.save()
         return redirect('product:detail2', pk=pk)
     else:  # 처음에 선택한 내용을 폼으로 보여주자
         seleted_product = Product.objects.get(pk=pk)  # pk로 Product에서 하나 꺼내자

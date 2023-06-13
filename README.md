@@ -138,3 +138,7 @@
       1. product/forms
       2. product/views
       3. product/templates/product/product_create
+   7. U: Edit Product
+      1. product/forms
+      2. product/views
+      3. product/templates/product/product_update

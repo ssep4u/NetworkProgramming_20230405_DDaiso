@@ -22,4 +22,4 @@ class ProductChangeForm(forms.ModelForm):
     price = forms.IntegerField(label='가격', widget=forms.NumberInput)
     class Meta:
         model = Product
-        fields = ['name', 'price']  #'__all__'
+        fields = ['name', 'price', 'image']  #'__all__'
